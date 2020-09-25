@@ -1,13 +1,15 @@
-import { Router, RouterContext } from "../deps.ts";
-
-import models from "../models/models.module.ts";
+import { Router, RouterContext, helpers } from "../deps.ts";
 
 const router = new Router();
 
 // TODO Could later replace with dedicated Controllers functions
-// RouterContext needed???
 router.get("/users", (ctx: RouterContext) => {
-  ctx.response.body = Array.from(models.users.values());
+  ctx.response.body = Array.from(ctx.state.models.users.values());
+});
+
+router.get("/users/:userId", (ctx: RouterContext) => {
+  const { userId } = helpers.getQuery(ctx, { mergeParams: true });
+  ctx.response.body = ctx.state.models.users.get(userId);
 });
 
 export default router;
