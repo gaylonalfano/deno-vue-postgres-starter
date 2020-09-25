@@ -1,5 +1,6 @@
 // Standard Library
 export * as log from "https://deno.land/std@0.70.0/log/mod.ts";
+export { v4 } from "https://deno.land/std@0.70.0/uuid/mod.ts";
 
 // Third-party
 export {
