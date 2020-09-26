@@ -6,8 +6,10 @@ import routes from "./routes/routes.module.ts";
 const port = 8000;
 const app = new Application();
 
-// Adding some logging from Deno course example
 // TODO Research how logging is generally organized. Middleware? Config?
+// Following https://github.com/asad-mlbd/deno-api-starter-oak/blob/master/app.ts
+// Looks like I could create logger.middleware.ts, error.middleware.ts, and timing.middleware.ts
+// Adding some logging from Deno course example
 await log.setup({
   handlers: {
     console: new log.handlers.ConsoleHandler("DEBUG"),

@@ -32,6 +32,33 @@ router.post("/messages", async (ctx: RouterContext) => {
 
 // TODO Implement update operation. Permissions is a key component.
 // Should only allow authenticated user (me) who is creator of the message
+// Example: https://github.com/asad-mlbd/deno-api-starter-oak/blob/ab2ce18accd5a3a0675d40793bd0489240c440ad/routes/user.routes.ts
+router.put("/messages/:messageId", async (ctx: RouterContext) => {
+  // Get message id from params
+  const { messageId } = helpers.getQuery(ctx, { mergeParams: true });
+  const message = ctx.state.models.messages.get(messageId);
+
+  // Check if current userId is the same as the message.userId
+  const currentUserId = ctx.state.me.id;
+
+  if (currentUserId !== message.userId) {
+    ctx.throw(401, `Current user: ${currentUserId} unauthorized to edit!`);
+  } else {
+    // Get the request data
+    const { value } = ctx.request.body({ type: "json" });
+    const { text } = await value;
+
+    // Update our Map object (database entity)
+    ctx.state.models.messages.set(messageId, {
+      id: messageId,
+      text: text,
+      userId: currentUserId,
+    });
+  }
+
+  // TODO What should I return? I think just a boolean...
+  ctx.response.body = true;
+});
 
 router.delete("/messages/:messageId", async (ctx: RouterContext) => {
   const { messageId } = helpers.getQuery(ctx, { mergeParams: true });
