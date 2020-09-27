@@ -8,7 +8,7 @@ WORKDIR /app
 # Copy source from local machine to working dir of container
 # /backend to /app
 # When we run the container we see our Deno app compile to:
-# Check file:///app/src/app/server.ts???????
+# Check file:///app/src/app/server.ts
 COPY . .
 
 # Set a user to run our app

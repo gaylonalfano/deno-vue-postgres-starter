@@ -1,0 +1,57 @@
+# Following (among others): https://github.com/asad-mlbd/deno-api-starter-oak/blob/ab2ce18accd5a3a0675d40793bd0489240c440ad/docker-compose.yml
+# TODO Find out how to connect to my PG DB inside Docker from config
+version: '3.1'
+
+services:
+#   backend:
+#     build: ./backend
+#     command: uvicorn app.main:app --reload --workers 1 --host 0.0.0.0 --port 8000
+#     volumes:
+#       - ./backend/:/app/
+#     ports:
+#       - 8000:8000
+#     environment:
+#       # DATABASE_URL=postgresql://user:password@postgresserver/db
+      # - DATABASE_URL=postgresql://${DB_USER}:${DB_PASSWORD}@db/${DB_DATABASE}
+  db:
+    container_name: deno_postgres
+    image: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_DATABASE}
+
+volumes:
+  postgres_data:
+
+# # My version with some minor tweaks
+# version: '3.7'
+
+# services:
+#   backend:
+#     build: ./backend
+#     command: uvicorn app.main:app --reload --workers 1 --host 0.0.0.0 --port 8000
+#     volumes:
+#       - ./backend/:/app/
+#     ports:
+#       - 8000:8000
+#     environment:
+#       # DATABASE_URL=postgresql://user:password@postgresserver/db
+#       - DATABASE_URL=postgresql://postgres:fastapi_password@db/sub_finder_dev
+
+#   db:
+#     image: postgres:12
+#     volumes:
+#       - postgres_data:/var/lib/postgresql/data/
+#     environment:
+#       - POSTGRES_DB=sub_finder_dev
+#       - POSTGRES_USER=postgres
+#       - POSTGRES_PASSWORD=fastapi_password
+
+# volumes:
+#   postgres_data:
+
