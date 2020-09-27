@@ -1,4 +1,4 @@
-import { Application, log } from "./deps.ts";
+import { Application, log } from "../../deps.ts";
 
 import models from "./models/models.module.ts";
 import routes from "./routes/routes.module.ts";

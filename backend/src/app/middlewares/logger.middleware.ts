@@ -1,4 +1,4 @@
-import { Context, log } from "../deps.ts";
+import { Context, log } from "../../../deps.ts";
 
 const loggerMiddleware = async (ctx: Context, next: () => Promise<void>) => {
   await next();

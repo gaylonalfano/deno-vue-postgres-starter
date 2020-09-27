@@ -1,4 +1,4 @@
-import { Router, RouterContext } from "../deps.ts";
+import { Router, RouterContext } from "../../../deps.ts";
 
 const router = new Router();
 

@@ -1,4 +1,4 @@
-import { Context, log } from "../deps.ts";
+import { Context, log } from "../../../deps.ts";
 
 const errorMiddleware = async (ctx: Context, next: () => Promise<void>) => {
   // See if next() middleware has an error:
