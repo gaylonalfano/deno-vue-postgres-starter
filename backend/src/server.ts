@@ -2,6 +2,7 @@ import { Application, log } from "./deps.ts";
 
 import models from "./models/models.module.ts";
 import routes from "./routes/routes.module.ts";
+import middlewares from "./middlewares/middlewares.module.ts";
 
 const port = 8000;
 const app = new Application();
@@ -30,38 +31,9 @@ app.addEventListener("error", (event) => {
   log.error(event.error);
 });
 
-// Add error-handling middleware
-app.use(async (ctx, next) => {
-  // See if next() middleware has an error:
-  try {
-    await next();
-  } catch (error) {
-    log.error(error);
-    ctx.response.body = "Internal server error.";
-    throw error;
-  }
-});
-
-// Add logging middleware
-app.use(async (ctx, next) => {
-  await next();
-  // We now have access to the response.headers from downstream middleware
-  const time = ctx.response.headers.get("X-Response-Time");
-  log.info(`${ctx.request.method} ${ctx.request.url} ${time}`);
-});
-
-// Measure time it takes to respond to a request
-app.use(async (ctx, next) => {
-  const start = Date.now();
-  // In between we use the power of next()
-  // We're calling downstream middleware after we start timer and once the downstream
-  // middleware completes, only then do we measure the delta
-  await next();
-  const delta = Date.now() - start;
-  // Let's store this delta inside the response.headers so we can extract for logging
-  // Need to convert to template string since delta: number
-  ctx.response.headers.set("X-Response-Time", `${delta}ms`);
-});
+app.use(middlewares.errorMiddleware);
+app.use(middlewares.loggerMiddleware);
+app.use(middlewares.timingMiddleware);
 
 // Add our pseudo auth middleware
 app.use(async (ctx, next) => {
@@ -74,6 +46,7 @@ app.use(async (ctx, next) => {
   await next();
 });
 
+// Add router middleware
 app.use(routes.session.allowedMethods());
 app.use(routes.session.routes());
 app.use(routes.user.allowedMethods());
