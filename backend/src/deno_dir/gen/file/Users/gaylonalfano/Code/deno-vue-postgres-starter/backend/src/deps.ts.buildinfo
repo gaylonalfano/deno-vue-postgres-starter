@@ -1,0 +1,1245 @@
+{
+  "program": {
+    "fileInfos": {
+      "asset:///lib.es5.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.es2015.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": false
+      },
+      "asset:///lib.es2016.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": false
+      },
+      "asset:///lib.es2017.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": false
+      },
+      "asset:///lib.es2018.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": false
+      },
+      "asset:///lib.es2019.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": false
+      },
+      "asset:///lib.es2020.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": false
+      },
+      "asset:///lib.esnext.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": false
+      },
+      "asset:///lib.es2015.core.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.es2015.collection.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.es2015.generator.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.es2015.iterable.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.es2015.promise.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.es2015.proxy.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.es2015.reflect.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.es2015.symbol.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.es2015.symbol.wellknown.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.es2016.array.include.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.es2017.object.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.es2017.sharedmemory.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.es2017.string.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.es2017.intl.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.es2017.typedarrays.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.es2018.asyncgenerator.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.es2018.asynciterable.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.es2018.intl.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.es2018.promise.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.es2018.regexp.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.es2019.array.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.es2019.object.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.es2019.string.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.es2019.symbol.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.es2020.bigint.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.es2020.promise.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.es2020.string.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.es2020.symbol.wellknown.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.es2020.intl.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.esnext.intl.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.esnext.string.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.esnext.promise.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.deno.ns.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.deno.window.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.deno.shared_globals.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.deno.web.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "asset:///lib.deno.fetch.d.ts": {
+        "version": "1",
+        "signature": "1",
+        "affectsGlobalScope": true
+      },
+      "https://deno.land/std@0.70.0/log/levels.ts": {
+        "version": "4d95985e3b913c01f8886d75ed8fac5a416be96f02a230ccba71f3c805c4d530",
+        "signature": "-10557372647",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.70.0/fmt/colors.ts": {
+        "version": "49e069cd28926bfc524a3a98ab08afa0c53b2ada911092a4c8ac46d12d24c055",
+        "signature": "-23161842459",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.70.0/fs/exists.ts": {
+        "version": "944fd7e4c232a79b3167a24a8796b0df4481ec97dfdd32bafbd0e45c2c5c4987",
+        "signature": "-9192612665",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.70.0/bytes/mod.ts": {
+        "version": "829f24fccb5a3972d0d9057d404e615fbe8bcb5f2f899539c1e7a56324a879e9",
+        "signature": "-814175339",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.70.0/_util/assert.ts": {
+        "version": "d3dc05ebe3f265a87392de28bb0243ffd0adcd565173a353e26f113156fe8b16",
+        "signature": "-16409965166",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.70.0/io/bufio.ts": {
+        "version": "e0ed0dbbfffaab7a2a577ee450fb93511d161e24781a0f7f1b7e47235a0ac420",
+        "signature": "7475322339",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.70.0/log/handlers.ts": {
+        "version": "a6dac91aa4ad6fe6034b824cddb4b67cf4a662400a35e92ff27a06cb8937a92f",
+        "signature": "-2670905676",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.70.0/log/logger.ts": {
+        "version": "24094dc3254ebb2f78d81d7e51a81cbc2a30c7e1bb6d20f0e62fd1bd344915af",
+        "signature": "-7632530790",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.70.0/log/mod.ts": {
+        "version": "4d81c394c1b1c4cade6bfbbfca7ecf9b1840af274e9c01454475587a72a7aec0",
+        "signature": "12108254395",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.70.0/uuid/_common.ts": {
+        "version": "a1922cc473cbd87d4afc0ec8b5f77e7f2c19f39b361a0797f118bfcb122c8138",
+        "signature": "-17143383195",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.70.0/uuid/v1.ts": {
+        "version": "7b6eeb87c034d3cc7eaaf23ba41529238971a9103542eb149ccd3ba1db3bf8ff",
+        "signature": "-42273907837",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.70.0/uuid/v4.ts": {
+        "version": "54443a92d3dbfbff2cd9d0eb36fdfdeedc1ee76e74121f39b8664b8ff546528b",
+        "signature": "-909062625",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.70.0/hash/sha1.ts": {
+        "version": "9e832d733ba37971e032cd5394f28b66501c4bdea5a753b969449b5200d31dbe",
+        "signature": "-11435360377",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.70.0/uuid/v5.ts": {
+        "version": "164c43c4671781bd61e9c281370959fb7421b792286662f06dda8a51d8ef35cb",
+        "signature": "9705701204",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.70.0/uuid/mod.ts": {
+        "version": "69c096ce6c9777111e1d5eab7c1672f085dd861744c3519743819e7e2b811611",
+        "signature": "-5333487729",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/bytes/mod.ts": {
+        "version": "829f24fccb5a3972d0d9057d404e615fbe8bcb5f2f899539c1e7a56324a879e9",
+        "signature": "-814175339",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/hash/sha1.ts": {
+        "version": "9e832d733ba37971e032cd5394f28b66501c4bdea5a753b969449b5200d31dbe",
+        "signature": "-11435360377",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/hash/sha256.ts": {
+        "version": "ce1d7403bf8649565a6110fe9cfe0a070157c80287f4029d77d0125ab352ed9d",
+        "signature": "-25284728549",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/encoding/utf8.ts": {
+        "version": "fc75aea3b39e304c48300472ba35a9d49c14ad06c62e9644a05842ba9fb84b4e",
+        "signature": "-9536159269",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/_util/assert.ts": {
+        "version": "d3dc05ebe3f265a87392de28bb0243ffd0adcd565173a353e26f113156fe8b16",
+        "signature": "-16409965166",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/io/bufio.ts": {
+        "version": "e0ed0dbbfffaab7a2a577ee450fb93511d161e24781a0f7f1b7e47235a0ac420",
+        "signature": "7475322339",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/async/deferred.ts": {
+        "version": "46ffc394ad353b5b5b68bb0b04a7ab3bab8a36bcd0bcf4298f421ccbcf177bad",
+        "signature": "919087033",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/async/delay.ts": {
+        "version": "c95fdfdd7f8ba85170c6332cc75a58f45312e3137264365aabfc4ded859893a0",
+        "signature": "-16927350",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/async/mux_async_iterator.ts": {
+        "version": "a28a35e1ef4d7c0dbef4f7cc480c22494a771cf6481fac44e4ec7baf274ac0fd",
+        "signature": "-19065168227",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/async/pool.ts": {
+        "version": "f11e614fdb02fb840ea23f63a4d80b5926eeb22752a432a7e75d8128be5567d6",
+        "signature": "-20791672128",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/async/mod.ts": {
+        "version": "8a92216bac0a953bab495cf7d1c422935c251f5913d22a938a5423d0f34548f7",
+        "signature": "-10073129669",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/textproto/mod.ts": {
+        "version": "419d305b3410ce18ea9a5c5112501b1af91951242d3ca42fc6c1e0fda586ec20",
+        "signature": "68968002",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/http/http_status.ts": {
+        "version": "bc55c10ad2cd1d7e0566297f91d79268c82c2bad5a8f22d7577ea4d276eba093",
+        "signature": "-67096563847",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/http/_io.ts": {
+        "version": "5d76dfcad4e4bf5246f174077f0fc1b8e8855037438e7d3996eeda558c25b179",
+        "signature": "34366521554",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/http/server.ts": {
+        "version": "f1648bc793653a2526061bc1d85cad009bd3664000d0d625bbb2b689985a84be",
+        "signature": "30542349274",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/path/_constants.ts": {
+        "version": "101383eca9dbee5ab5cfb866ef8a0279a3a74564b40d30f66a35748c552633c9",
+        "signature": "-12325965835",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/path/_interface.ts": {
+        "version": "af736e06c114d45d836ce64e238fe579ae987458441ac44721623cb878f01244",
+        "signature": "-1412093740",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/path/_util.ts": {
+        "version": "3831eeaba4f890551d9ad0c0d99e7d8f5fd569d52cb4539407136b6708cc0a4e",
+        "signature": "-10723860741",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/path/win32.ts": {
+        "version": "4eb0f174abf4ac8159eba28068dbc10e0bd811baee811faa2f7b5fd209cf5198",
+        "signature": "-76451241387",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/path/posix.ts": {
+        "version": "50f7fb1604f3671b6d42a48a4564141d347ac7c5501e99ad0041bd0ea2a8b23f",
+        "signature": "-116198728565",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/path/separator.ts": {
+        "version": "282e1b20675e3376457ee80da11741602ff94f40fe3649df4e1aa998cf0c2419",
+        "signature": "-10501340316",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/path/common.ts": {
+        "version": "30056dcb3a5045554bd9699c1b272649d329d2c6aaad24ed771de664e623e9f9",
+        "signature": "2633111834",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/path/glob.ts": {
+        "version": "7892ceca27e061531982d11eaf7c56857b805f0bfe936b6c48d978456c3d27c0",
+        "signature": "-27603167727",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/path/mod.ts": {
+        "version": "a21af7af463778494840701fbb4cb82595b247668179905bbb9d94883daeb6ea",
+        "signature": "39128229041",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/fmt/colors.ts": {
+        "version": "49e069cd28926bfc524a3a98ab08afa0c53b2ada911092a4c8ac46d12d24c055",
+        "signature": "-23161842459",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/testing/diff.ts": {
+        "version": "70d282f6e6418f3b4860780780297bd05f54f4cb7970f4bef4282f4f6b9c6040",
+        "signature": "-30283754955",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/testing/asserts.ts": {
+        "version": "67f5b25f640598f1a3ceb4709810ff5d6c01873a2954652c355e821696ca3a4c",
+        "signature": "-8617011356",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/_util/has_own_property.ts": {
+        "version": "cd367aa3f441f25c2dbe253b42aa224c2d0b3e209fd5368321cf69662d6e11f7",
+        "signature": "-7116351741",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/io/ioutil.ts": {
+        "version": "aeca9e0a607e4d0c84896ac652954a29d7e68a500384e3fabfd8d64763d9ecdd",
+        "signature": "-43148999918",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/std@0.69.0/ws/mod.ts": {
+        "version": "87c196175bc14d46af92744d465ff154a8a854c466c2fc67307a0fc25062f0f6",
+        "signature": "-24282942975",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/media_types@v2.4.7/db.ts": {
+        "version": "9bda2439b6c3477e3609501a99024193309cbd5c668195f594eae1c1628d9182",
+        "signature": "-10788447879",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/media_types@v2.4.7/deps.ts": {
+        "version": "372c0122ead7a26578f9a37fba19e63883b2a5f540d480e48cf37054eaa0719f",
+        "signature": "-10783907727",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/media_types@v2.4.7/mod.ts": {
+        "version": "28ba6e49cfea209b04eea995c3de7c1641c8ebdee6b662b1ed38aab9d06718b9",
+        "signature": "-10010914529",
+        "affectsGlobalScope": false
+      },
+      "https://raw.githubusercontent.com/pillarjs/path-to-regexp/v6.1.0/src/index.ts": {
+        "version": "f45eaae7493cedb9ea48de6b6462855f9e0358a46e8a90926e7e33be4eae334f",
+        "signature": "1662906945",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/oak@v6.2.0/deps.ts": {
+        "version": "ad904ff122d7c22da09f67800ccc51c606b93a6faa3e9409273d3a5a0802026d",
+        "signature": "-103232646223",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/oak@v6.2.0/tssCompare.ts": {
+        "version": "21c33d8f6fae13d29b24fe5a4387e0a0ab5ebf7f11c35d5c13fa5102bf2978ec",
+        "signature": "-6996353105",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/oak@v6.2.0/keyStack.ts": {
+        "version": "573ab5a498eb0c88026e9cf4ca26b973c274520101f63f7731c7a859989ef8b6",
+        "signature": "-30542861508",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/oak@v6.2.0/types.d.ts": {
+        "version": "028527f2f34c81757b939f39c082f7e92aecff54fcea49677b8cfeaca634c4b8",
+        "signature": "028527f2f34c81757b939f39c082f7e92aecff54fcea49677b8cfeaca634c4b8",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/oak@v6.2.0/httpError.ts": {
+        "version": "945014c18745255ee2fe60c5a8cea623958b1d2ed1f73946e5c82be93b775085",
+        "signature": "-61323745878",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/oak@v6.2.0/mediaTyper.ts": {
+        "version": "10b76b701c1ca4a3cd44b1a9a7b0a291d92f9414a60a91d20e41257ee8452f6f",
+        "signature": "43554532462",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/oak@v6.2.0/isMediaType.ts": {
+        "version": "8495518ae7e84f011643267357c1720134904f58677366a51a8f29881f908070",
+        "signature": "-16081029828",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/oak@v6.2.0/util.ts": {
+        "version": "9ec19e91782849b54571018873e1f72e1c887770a495fca116c18a75308f2bc5",
+        "signature": "-69745509142",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/oak@v6.2.0/buf_reader.ts": {
+        "version": "285eddeb7f2257227fea2c5e5cf7589416b91c0e996eddb9201f826da1d81cd3",
+        "signature": "-27915023452",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/oak@v6.2.0/headers.ts": {
+        "version": "0740aae1658a4a95c60a098896664bd5b1491b1dd52200a4840fcf7e6edf21be",
+        "signature": "-9292777880",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/oak@v6.2.0/content_disposition.ts": {
+        "version": "8d3c4193116f9918b77386191cf9aa26fa12be6bece79dab70496b5f4a4b59c1",
+        "signature": "-7986686433",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/oak@v6.2.0/multipart.ts": {
+        "version": "132c7c51b54abaf08c116d55f6d1d9e125a220b68e81d18a52305d3be7ca5690",
+        "signature": "-61314182026",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/oak@v6.2.0/body.ts": {
+        "version": "1ca08a16127e9e1e55c26fd50493cbd42460a1bde0fb26ab85ff43620f7a811c",
+        "signature": "33936414034",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/oak@v6.2.0/negotiation/common.ts": {
+        "version": "b89d2d1e40459ab9a0bf62eb17ef057eff3097597bb05ac91300b1700c941264",
+        "signature": "-10842355990",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/oak@v6.2.0/negotiation/charset.ts": {
+        "version": "0edbef960246115d117db72e002ae3474b7aa1cd7f45faad9b354097b33af64e",
+        "signature": "-5631276198",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/oak@v6.2.0/negotiation/encoding.ts": {
+        "version": "7c0e1e5b55a332f8329b80247f4e4119bc77e9998e9dcc134375f20e3a25f32c",
+        "signature": "2792566072",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/oak@v6.2.0/negotiation/language.ts": {
+        "version": "2b85e956387935f93695ebfa829ab7ff921cc1960ec56f55e5a5dab17d7d95c9",
+        "signature": "2949657524",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/oak@v6.2.0/negotiation/mediaType.ts": {
+        "version": "ad3790dff407c6f2c0692d43ad6e68e3bc8c947769dcabda4a5c994a40423916",
+        "signature": "24526903593",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/oak@v6.2.0/request.ts": {
+        "version": "b005d98748989e4b17c780ebcf5f26e34709dd82272ad3ff23b1414ae23981e0",
+        "signature": "25119173025",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/oak@v6.2.0/response.ts": {
+        "version": "7bc09e9b0b5267f40f43e6ac3972e55a82a9ae5b99dc9360c91c7d7d432813db",
+        "signature": "-71325720018",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/oak@v6.2.0/cookies.ts": {
+        "version": "5dccc6813fa3877dfa6837c0d8124d3b069f2b0d7e97cbd1317e5e024fad668d",
+        "signature": "-8221363842",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/oak@v6.2.0/send.ts": {
+        "version": "6b0f2cfe7b26feaca130e2a964e54947ab76bc2c04f3f3f494705abc259a4c2f",
+        "signature": "59759065966",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/oak@v6.2.0/server_sent_event.ts": {
+        "version": "c91684109ade5e627a6e70aef467af5c4ce6d6485a8a899743b336c1989b01f4",
+        "signature": "47265644894",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/oak@v6.2.0/context.ts": {
+        "version": "b0c42eb315575aa83e37ce38f4e9ed18134abd35b414a51d5e3e7f1c73b8ef07",
+        "signature": "64551922333",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/oak@v6.2.0/middleware.ts": {
+        "version": "79217f3a22c97cb381712d7702b48a6b532865851bc7509aadf6bd8336863294",
+        "signature": "-36604135567",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/oak@v6.2.0/application.ts": {
+        "version": "0b31285df117822f36ef18b8b0f3ff89a9e8a74ce5413855480d67ae769c1380",
+        "signature": "-67806734069",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/oak@v6.2.0/router.ts": {
+        "version": "4dc3481d71442bec351e762be147cc6865b046d7b61961709bbf5c07ce884dca",
+        "signature": "16019646156",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/oak@v6.2.0/helpers.ts": {
+        "version": "15b828078a1d08a708f57cd91983f42ba5f11d5394e6b1987885981955cfc305",
+        "signature": "34624091483",
+        "affectsGlobalScope": false
+      },
+      "https://deno.land/x/oak@v6.2.0/mod.ts": {
+        "version": "9a4619f6b3a6ecdb889ceb99ad1f790384d4c5e73a01eed8031a6f6ccbb0de3f",
+        "signature": "-82870025626",
+        "affectsGlobalScope": false
+      },
+      "file:///Users/gaylonalfano/Code/deno-vue-postgres-starter/backend/src/deps.ts": {
+        "version": "659c683f4ae793110a76d96688fa731cdc69e13b2e059e1880caebf55d692f29",
+        "signature": "-2451749379",
+        "affectsGlobalScope": false
+      }
+    },
+    "options": {
+      "allowJs": false,
+      "checkJs": false,
+      "esModuleInterop": true,
+      "incremental": true,
+      "inlineSourceMap": true,
+      "isolatedModules": false,
+      "importsNotUsedAsValues": 0,
+      "jsx": 2,
+      "lib": [
+        "lib.deno.window.d.ts"
+      ],
+      "module": 99,
+      "outDir": "deno://",
+      "resolveJsonModule": true,
+      "sourceMap": false,
+      "strict": true,
+      "removeComments": true,
+      "target": 99,
+      "tsBuildInfoFile": "./tsbuildinfo.json",
+      "configFilePath": "./tsconfig.json",
+      "allowNonTsExtensions": true
+    },
+    "referencedMap": {
+      "file:///Users/gaylonalfano/Code/deno-vue-postgres-starter/backend/src/deps.ts": [
+        "https://deno.land/std@0.70.0/log/mod.ts",
+        "https://deno.land/std@0.70.0/uuid/mod.ts",
+        "https://deno.land/x/oak@v6.2.0/mod.ts"
+      ],
+      "https://deno.land/std@0.69.0/async/mod.ts": [
+        "https://deno.land/std@0.69.0/async/deferred.ts",
+        "https://deno.land/std@0.69.0/async/delay.ts",
+        "https://deno.land/std@0.69.0/async/mux_async_iterator.ts",
+        "https://deno.land/std@0.69.0/async/pool.ts"
+      ],
+      "https://deno.land/std@0.69.0/async/mux_async_iterator.ts": [
+        "https://deno.land/std@0.69.0/async/deferred.ts"
+      ],
+      "https://deno.land/std@0.69.0/http/_io.ts": [
+        "https://deno.land/std@0.69.0/_util/assert.ts",
+        "https://deno.land/std@0.69.0/encoding/utf8.ts",
+        "https://deno.land/std@0.69.0/http/http_status.ts",
+        "https://deno.land/std@0.69.0/http/server.ts",
+        "https://deno.land/std@0.69.0/io/bufio.ts",
+        "https://deno.land/std@0.69.0/textproto/mod.ts"
+      ],
+      "https://deno.land/std@0.69.0/http/server.ts": [
+        "https://deno.land/std@0.69.0/_util/assert.ts",
+        "https://deno.land/std@0.69.0/async/mod.ts",
+        "https://deno.land/std@0.69.0/encoding/utf8.ts",
+        "https://deno.land/std@0.69.0/http/_io.ts",
+        "https://deno.land/std@0.69.0/io/bufio.ts"
+      ],
+      "https://deno.land/std@0.69.0/io/bufio.ts": [
+        "https://deno.land/std@0.69.0/_util/assert.ts",
+        "https://deno.land/std@0.69.0/bytes/mod.ts"
+      ],
+      "https://deno.land/std@0.69.0/io/ioutil.ts": [
+        "https://deno.land/std@0.69.0/_util/assert.ts",
+        "https://deno.land/std@0.69.0/io/bufio.ts"
+      ],
+      "https://deno.land/std@0.69.0/path/_util.ts": [
+        "https://deno.land/std@0.69.0/path/_constants.ts",
+        "https://deno.land/std@0.69.0/path/_interface.ts"
+      ],
+      "https://deno.land/std@0.69.0/path/common.ts": [
+        "https://deno.land/std@0.69.0/path/separator.ts"
+      ],
+      "https://deno.land/std@0.69.0/path/glob.ts": [
+        "https://deno.land/std@0.69.0/path/_constants.ts",
+        "https://deno.land/std@0.69.0/path/mod.ts",
+        "https://deno.land/std@0.69.0/path/separator.ts"
+      ],
+      "https://deno.land/std@0.69.0/path/mod.ts": [
+        "https://deno.land/std@0.69.0/path/_constants.ts",
+        "https://deno.land/std@0.69.0/path/_interface.ts",
+        "https://deno.land/std@0.69.0/path/common.ts",
+        "https://deno.land/std@0.69.0/path/glob.ts",
+        "https://deno.land/std@0.69.0/path/posix.ts",
+        "https://deno.land/std@0.69.0/path/separator.ts",
+        "https://deno.land/std@0.69.0/path/win32.ts"
+      ],
+      "https://deno.land/std@0.69.0/path/posix.ts": [
+        "https://deno.land/std@0.69.0/path/_constants.ts",
+        "https://deno.land/std@0.69.0/path/_interface.ts",
+        "https://deno.land/std@0.69.0/path/_util.ts"
+      ],
+      "https://deno.land/std@0.69.0/path/separator.ts": [
+        "https://deno.land/std@0.69.0/path/_constants.ts"
+      ],
+      "https://deno.land/std@0.69.0/path/win32.ts": [
+        "https://deno.land/std@0.69.0/_util/assert.ts",
+        "https://deno.land/std@0.69.0/path/_constants.ts",
+        "https://deno.land/std@0.69.0/path/_interface.ts",
+        "https://deno.land/std@0.69.0/path/_util.ts"
+      ],
+      "https://deno.land/std@0.69.0/testing/asserts.ts": [
+        "https://deno.land/std@0.69.0/fmt/colors.ts",
+        "https://deno.land/std@0.69.0/testing/diff.ts"
+      ],
+      "https://deno.land/std@0.69.0/textproto/mod.ts": [
+        "https://deno.land/std@0.69.0/bytes/mod.ts",
+        "https://deno.land/std@0.69.0/encoding/utf8.ts",
+        "https://deno.land/std@0.69.0/io/bufio.ts"
+      ],
+      "https://deno.land/std@0.69.0/ws/mod.ts": [
+        "https://deno.land/std@0.69.0/_util/assert.ts",
+        "https://deno.land/std@0.69.0/_util/has_own_property.ts",
+        "https://deno.land/std@0.69.0/async/deferred.ts",
+        "https://deno.land/std@0.69.0/bytes/mod.ts",
+        "https://deno.land/std@0.69.0/encoding/utf8.ts",
+        "https://deno.land/std@0.69.0/hash/sha1.ts",
+        "https://deno.land/std@0.69.0/http/_io.ts",
+        "https://deno.land/std@0.69.0/io/bufio.ts",
+        "https://deno.land/std@0.69.0/io/ioutil.ts",
+        "https://deno.land/std@0.69.0/textproto/mod.ts"
+      ],
+      "https://deno.land/std@0.70.0/io/bufio.ts": [
+        "https://deno.land/std@0.70.0/_util/assert.ts",
+        "https://deno.land/std@0.70.0/bytes/mod.ts"
+      ],
+      "https://deno.land/std@0.70.0/log/handlers.ts": [
+        "https://deno.land/std@0.70.0/fmt/colors.ts",
+        "https://deno.land/std@0.70.0/fs/exists.ts",
+        "https://deno.land/std@0.70.0/io/bufio.ts",
+        "https://deno.land/std@0.70.0/log/levels.ts",
+        "https://deno.land/std@0.70.0/log/logger.ts"
+      ],
+      "https://deno.land/std@0.70.0/log/logger.ts": [
+        "https://deno.land/std@0.70.0/log/handlers.ts",
+        "https://deno.land/std@0.70.0/log/levels.ts"
+      ],
+      "https://deno.land/std@0.70.0/log/mod.ts": [
+        "https://deno.land/std@0.70.0/_util/assert.ts",
+        "https://deno.land/std@0.70.0/log/handlers.ts",
+        "https://deno.land/std@0.70.0/log/levels.ts",
+        "https://deno.land/std@0.70.0/log/logger.ts"
+      ],
+      "https://deno.land/std@0.70.0/uuid/mod.ts": [
+        "https://deno.land/std@0.70.0/uuid/v1.ts",
+        "https://deno.land/std@0.70.0/uuid/v4.ts",
+        "https://deno.land/std@0.70.0/uuid/v5.ts"
+      ],
+      "https://deno.land/std@0.70.0/uuid/v1.ts": [
+        "https://deno.land/std@0.70.0/uuid/_common.ts"
+      ],
+      "https://deno.land/std@0.70.0/uuid/v4.ts": [
+        "https://deno.land/std@0.70.0/uuid/_common.ts"
+      ],
+      "https://deno.land/std@0.70.0/uuid/v5.ts": [
+        "https://deno.land/std@0.70.0/_util/assert.ts",
+        "https://deno.land/std@0.70.0/hash/sha1.ts",
+        "https://deno.land/std@0.70.0/uuid/_common.ts"
+      ],
+      "https://deno.land/x/media_types@v2.4.7/deps.ts": [
+        "https://deno.land/std@0.69.0/path/mod.ts"
+      ],
+      "https://deno.land/x/media_types@v2.4.7/mod.ts": [
+        "https://deno.land/x/media_types@v2.4.7/db.ts",
+        "https://deno.land/x/media_types@v2.4.7/deps.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/application.ts": [
+        "https://deno.land/std@0.69.0/fmt/colors.ts",
+        "https://deno.land/std@0.69.0/path/win32.ts",
+        "https://deno.land/x/oak@v6.2.0/context.ts",
+        "https://deno.land/x/oak@v6.2.0/deps.ts",
+        "https://deno.land/x/oak@v6.2.0/keyStack.ts",
+        "https://deno.land/x/oak@v6.2.0/middleware.ts",
+        "https://deno.land/x/oak@v6.2.0/types.d.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/body.ts": [
+        "https://deno.land/x/oak@v6.2.0/deps.ts",
+        "https://deno.land/x/oak@v6.2.0/httpError.ts",
+        "https://deno.land/x/oak@v6.2.0/isMediaType.ts",
+        "https://deno.land/x/oak@v6.2.0/multipart.ts",
+        "https://deno.land/x/oak@v6.2.0/types.d.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/buf_reader.ts": [
+        "https://deno.land/x/oak@v6.2.0/deps.ts",
+        "https://deno.land/x/oak@v6.2.0/util.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/content_disposition.ts": [
+        "https://deno.land/x/oak@v6.2.0/headers.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/context.ts": [
+        "https://deno.land/x/oak@v6.2.0/application.ts",
+        "https://deno.land/x/oak@v6.2.0/cookies.ts",
+        "https://deno.land/x/oak@v6.2.0/deps.ts",
+        "https://deno.land/x/oak@v6.2.0/httpError.ts",
+        "https://deno.land/x/oak@v6.2.0/keyStack.ts",
+        "https://deno.land/x/oak@v6.2.0/request.ts",
+        "https://deno.land/x/oak@v6.2.0/response.ts",
+        "https://deno.land/x/oak@v6.2.0/send.ts",
+        "https://deno.land/x/oak@v6.2.0/server_sent_event.ts",
+        "https://deno.land/x/oak@v6.2.0/types.d.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/cookies.ts": [
+        "https://deno.land/x/oak@v6.2.0/keyStack.ts",
+        "https://deno.land/x/oak@v6.2.0/request.ts",
+        "https://deno.land/x/oak@v6.2.0/response.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/deps.ts": [
+        "https://deno.land/std@0.69.0/bytes/mod.ts",
+        "https://deno.land/std@0.69.0/hash/sha1.ts",
+        "https://deno.land/std@0.69.0/hash/sha256.ts",
+        "https://deno.land/std@0.69.0/http/http_status.ts",
+        "https://deno.land/std@0.69.0/http/server.ts",
+        "https://deno.land/std@0.69.0/io/bufio.ts",
+        "https://deno.land/std@0.69.0/path/mod.ts",
+        "https://deno.land/std@0.69.0/testing/asserts.ts",
+        "https://deno.land/std@0.69.0/ws/mod.ts",
+        "https://deno.land/x/media_types@v2.4.7/mod.ts",
+        "https://raw.githubusercontent.com/pillarjs/path-to-regexp/v6.1.0/src/index.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/headers.ts": [
+        "https://deno.land/x/oak@v6.2.0/buf_reader.ts",
+        "https://deno.land/x/oak@v6.2.0/httpError.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/helpers.ts": [
+        "https://deno.land/x/oak@v6.2.0/context.ts",
+        "https://deno.land/x/oak@v6.2.0/router.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/httpError.ts": [
+        "https://deno.land/x/oak@v6.2.0/deps.ts",
+        "https://deno.land/x/oak@v6.2.0/types.d.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/isMediaType.ts": [
+        "https://deno.land/x/oak@v6.2.0/deps.ts",
+        "https://deno.land/x/oak@v6.2.0/mediaTyper.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/keyStack.ts": [
+        "https://deno.land/x/oak@v6.2.0/deps.ts",
+        "https://deno.land/x/oak@v6.2.0/tssCompare.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/middleware.ts": [
+        "https://deno.land/x/oak@v6.2.0/application.ts",
+        "https://deno.land/x/oak@v6.2.0/context.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/mod.ts": [
+        "https://deno.land/x/oak@v6.2.0/application.ts",
+        "https://deno.land/x/oak@v6.2.0/body.ts",
+        "https://deno.land/x/oak@v6.2.0/context.ts",
+        "https://deno.land/x/oak@v6.2.0/cookies.ts",
+        "https://deno.land/x/oak@v6.2.0/deps.ts",
+        "https://deno.land/x/oak@v6.2.0/helpers.ts",
+        "https://deno.land/x/oak@v6.2.0/httpError.ts",
+        "https://deno.land/x/oak@v6.2.0/middleware.ts",
+        "https://deno.land/x/oak@v6.2.0/multipart.ts",
+        "https://deno.land/x/oak@v6.2.0/request.ts",
+        "https://deno.land/x/oak@v6.2.0/response.ts",
+        "https://deno.land/x/oak@v6.2.0/router.ts",
+        "https://deno.land/x/oak@v6.2.0/send.ts",
+        "https://deno.land/x/oak@v6.2.0/server_sent_event.ts",
+        "https://deno.land/x/oak@v6.2.0/types.d.ts",
+        "https://deno.land/x/oak@v6.2.0/util.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/multipart.ts": [
+        "https://deno.land/x/oak@v6.2.0/buf_reader.ts",
+        "https://deno.land/x/oak@v6.2.0/content_disposition.ts",
+        "https://deno.land/x/oak@v6.2.0/deps.ts",
+        "https://deno.land/x/oak@v6.2.0/headers.ts",
+        "https://deno.land/x/oak@v6.2.0/httpError.ts",
+        "https://deno.land/x/oak@v6.2.0/util.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/negotiation/charset.ts": [
+        "https://deno.land/x/oak@v6.2.0/negotiation/common.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/negotiation/encoding.ts": [
+        "https://deno.land/x/oak@v6.2.0/negotiation/common.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/negotiation/language.ts": [
+        "https://deno.land/x/oak@v6.2.0/negotiation/common.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/negotiation/mediaType.ts": [
+        "https://deno.land/x/oak@v6.2.0/negotiation/common.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/request.ts": [
+        "https://deno.land/x/oak@v6.2.0/body.ts",
+        "https://deno.land/x/oak@v6.2.0/negotiation/charset.ts",
+        "https://deno.land/x/oak@v6.2.0/negotiation/encoding.ts",
+        "https://deno.land/x/oak@v6.2.0/negotiation/language.ts",
+        "https://deno.land/x/oak@v6.2.0/negotiation/mediaType.ts",
+        "https://deno.land/x/oak@v6.2.0/types.d.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/response.ts": [
+        "https://deno.land/x/oak@v6.2.0/deps.ts",
+        "https://deno.land/x/oak@v6.2.0/request.ts",
+        "https://deno.land/x/oak@v6.2.0/types.d.ts",
+        "https://deno.land/x/oak@v6.2.0/util.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/router.ts": [
+        "https://deno.land/x/oak@v6.2.0/application.ts",
+        "https://deno.land/x/oak@v6.2.0/context.ts",
+        "https://deno.land/x/oak@v6.2.0/deps.ts",
+        "https://deno.land/x/oak@v6.2.0/httpError.ts",
+        "https://deno.land/x/oak@v6.2.0/middleware.ts",
+        "https://deno.land/x/oak@v6.2.0/types.d.ts",
+        "https://deno.land/x/oak@v6.2.0/util.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/send.ts": [
+        "https://deno.land/x/oak@v6.2.0/context.ts",
+        "https://deno.land/x/oak@v6.2.0/deps.ts",
+        "https://deno.land/x/oak@v6.2.0/httpError.ts",
+        "https://deno.land/x/oak@v6.2.0/util.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/server_sent_event.ts": [
+        "https://deno.land/x/oak@v6.2.0/application.ts",
+        "https://deno.land/x/oak@v6.2.0/deps.ts",
+        "https://deno.land/x/oak@v6.2.0/types.d.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/tssCompare.ts": [
+        "https://deno.land/x/oak@v6.2.0/deps.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/types.d.ts": [
+        "https://deno.land/x/oak@v6.2.0/deps.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/util.ts": [
+        "https://deno.land/x/oak@v6.2.0/deps.ts",
+        "https://deno.land/x/oak@v6.2.0/httpError.ts",
+        "https://deno.land/x/oak@v6.2.0/types.d.ts"
+      ]
+    },
+    "exportedModulesMap": {
+      "file:///Users/gaylonalfano/Code/deno-vue-postgres-starter/backend/src/deps.ts": [
+        "https://deno.land/std@0.70.0/log/mod.ts",
+        "https://deno.land/std@0.70.0/uuid/mod.ts",
+        "https://deno.land/x/oak@v6.2.0/mod.ts"
+      ],
+      "https://deno.land/std@0.69.0/async/mod.ts": [
+        "https://deno.land/std@0.69.0/async/deferred.ts",
+        "https://deno.land/std@0.69.0/async/delay.ts",
+        "https://deno.land/std@0.69.0/async/mux_async_iterator.ts",
+        "https://deno.land/std@0.69.0/async/pool.ts"
+      ],
+      "https://deno.land/std@0.69.0/http/_io.ts": [
+        "https://deno.land/std@0.69.0/http/server.ts",
+        "https://deno.land/std@0.69.0/io/bufio.ts"
+      ],
+      "https://deno.land/std@0.69.0/http/server.ts": [
+        "https://deno.land/std@0.69.0/async/mod.ts",
+        "https://deno.land/std@0.69.0/io/bufio.ts"
+      ],
+      "https://deno.land/std@0.69.0/io/ioutil.ts": [
+        "https://deno.land/std@0.69.0/io/bufio.ts"
+      ],
+      "https://deno.land/std@0.69.0/path/_util.ts": [
+        "https://deno.land/std@0.69.0/path/_interface.ts"
+      ],
+      "https://deno.land/std@0.69.0/path/mod.ts": [
+        "https://deno.land/std@0.69.0/path/_interface.ts",
+        "https://deno.land/std@0.69.0/path/common.ts",
+        "https://deno.land/std@0.69.0/path/glob.ts",
+        "https://deno.land/std@0.69.0/path/posix.ts",
+        "https://deno.land/std@0.69.0/path/separator.ts",
+        "https://deno.land/std@0.69.0/path/win32.ts"
+      ],
+      "https://deno.land/std@0.69.0/path/posix.ts": [
+        "https://deno.land/std@0.69.0/path/_interface.ts"
+      ],
+      "https://deno.land/std@0.69.0/path/win32.ts": [
+        "https://deno.land/std@0.69.0/path/_interface.ts"
+      ],
+      "https://deno.land/std@0.69.0/textproto/mod.ts": [
+        "https://deno.land/std@0.69.0/io/bufio.ts"
+      ],
+      "https://deno.land/std@0.69.0/ws/mod.ts": [
+        "https://deno.land/std@0.69.0/io/bufio.ts"
+      ],
+      "https://deno.land/std@0.70.0/log/handlers.ts": [
+        "https://deno.land/std@0.70.0/io/bufio.ts",
+        "https://deno.land/std@0.70.0/log/levels.ts",
+        "https://deno.land/std@0.70.0/log/logger.ts"
+      ],
+      "https://deno.land/std@0.70.0/log/logger.ts": [
+        "https://deno.land/std@0.70.0/log/handlers.ts",
+        "https://deno.land/std@0.70.0/log/levels.ts"
+      ],
+      "https://deno.land/std@0.70.0/log/mod.ts": [
+        "https://deno.land/std@0.70.0/log/handlers.ts",
+        "https://deno.land/std@0.70.0/log/levels.ts",
+        "https://deno.land/std@0.70.0/log/logger.ts"
+      ],
+      "https://deno.land/std@0.70.0/uuid/mod.ts": [
+        "https://deno.land/std@0.70.0/uuid/v1.ts",
+        "https://deno.land/std@0.70.0/uuid/v4.ts",
+        "https://deno.land/std@0.70.0/uuid/v5.ts"
+      ],
+      "https://deno.land/x/media_types@v2.4.7/deps.ts": [
+        "https://deno.land/std@0.69.0/path/mod.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/application.ts": [
+        "https://deno.land/x/oak@v6.2.0/context.ts",
+        "https://deno.land/x/oak@v6.2.0/keyStack.ts",
+        "https://deno.land/x/oak@v6.2.0/middleware.ts",
+        "https://deno.land/x/oak@v6.2.0/types.d.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/body.ts": [
+        "https://deno.land/x/oak@v6.2.0/multipart.ts",
+        "https://deno.land/x/oak@v6.2.0/types.d.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/context.ts": [
+        "https://deno.land/x/oak@v6.2.0/application.ts",
+        "https://deno.land/x/oak@v6.2.0/cookies.ts",
+        "https://deno.land/x/oak@v6.2.0/deps.ts",
+        "https://deno.land/x/oak@v6.2.0/request.ts",
+        "https://deno.land/x/oak@v6.2.0/response.ts",
+        "https://deno.land/x/oak@v6.2.0/send.ts",
+        "https://deno.land/x/oak@v6.2.0/server_sent_event.ts",
+        "https://deno.land/x/oak@v6.2.0/types.d.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/cookies.ts": [
+        "https://deno.land/x/oak@v6.2.0/keyStack.ts",
+        "https://deno.land/x/oak@v6.2.0/request.ts",
+        "https://deno.land/x/oak@v6.2.0/response.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/deps.ts": [
+        "https://deno.land/std@0.69.0/bytes/mod.ts",
+        "https://deno.land/std@0.69.0/hash/sha1.ts",
+        "https://deno.land/std@0.69.0/hash/sha256.ts",
+        "https://deno.land/std@0.69.0/http/http_status.ts",
+        "https://deno.land/std@0.69.0/http/server.ts",
+        "https://deno.land/std@0.69.0/io/bufio.ts",
+        "https://deno.land/std@0.69.0/path/mod.ts",
+        "https://deno.land/std@0.69.0/testing/asserts.ts",
+        "https://deno.land/std@0.69.0/ws/mod.ts",
+        "https://deno.land/x/media_types@v2.4.7/mod.ts",
+        "https://raw.githubusercontent.com/pillarjs/path-to-regexp/v6.1.0/src/index.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/headers.ts": [
+        "https://deno.land/x/oak@v6.2.0/buf_reader.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/helpers.ts": [
+        "https://deno.land/x/oak@v6.2.0/context.ts",
+        "https://deno.land/x/oak@v6.2.0/router.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/httpError.ts": [
+        "https://deno.land/x/oak@v6.2.0/deps.ts",
+        "https://deno.land/x/oak@v6.2.0/types.d.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/middleware.ts": [
+        "https://deno.land/x/oak@v6.2.0/application.ts",
+        "https://deno.land/x/oak@v6.2.0/context.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/mod.ts": [
+        "https://deno.land/x/oak@v6.2.0/application.ts",
+        "https://deno.land/x/oak@v6.2.0/body.ts",
+        "https://deno.land/x/oak@v6.2.0/context.ts",
+        "https://deno.land/x/oak@v6.2.0/cookies.ts",
+        "https://deno.land/x/oak@v6.2.0/deps.ts",
+        "https://deno.land/x/oak@v6.2.0/helpers.ts",
+        "https://deno.land/x/oak@v6.2.0/httpError.ts",
+        "https://deno.land/x/oak@v6.2.0/middleware.ts",
+        "https://deno.land/x/oak@v6.2.0/multipart.ts",
+        "https://deno.land/x/oak@v6.2.0/request.ts",
+        "https://deno.land/x/oak@v6.2.0/response.ts",
+        "https://deno.land/x/oak@v6.2.0/router.ts",
+        "https://deno.land/x/oak@v6.2.0/send.ts",
+        "https://deno.land/x/oak@v6.2.0/server_sent_event.ts",
+        "https://deno.land/x/oak@v6.2.0/types.d.ts",
+        "https://deno.land/x/oak@v6.2.0/util.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/request.ts": [
+        "https://deno.land/x/oak@v6.2.0/body.ts",
+        "https://deno.land/x/oak@v6.2.0/types.d.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/response.ts": [
+        "https://deno.land/x/oak@v6.2.0/deps.ts",
+        "https://deno.land/x/oak@v6.2.0/request.ts",
+        "https://deno.land/x/oak@v6.2.0/types.d.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/router.ts": [
+        "https://deno.land/x/oak@v6.2.0/application.ts",
+        "https://deno.land/x/oak@v6.2.0/context.ts",
+        "https://deno.land/x/oak@v6.2.0/deps.ts",
+        "https://deno.land/x/oak@v6.2.0/middleware.ts",
+        "https://deno.land/x/oak@v6.2.0/types.d.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/send.ts": [
+        "https://deno.land/x/oak@v6.2.0/context.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/server_sent_event.ts": [
+        "https://deno.land/x/oak@v6.2.0/application.ts",
+        "https://deno.land/x/oak@v6.2.0/types.d.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/types.d.ts": [
+        "https://deno.land/x/oak@v6.2.0/deps.ts"
+      ],
+      "https://deno.land/x/oak@v6.2.0/util.ts": [
+        "https://deno.land/x/oak@v6.2.0/deps.ts",
+        "https://deno.land/x/oak@v6.2.0/types.d.ts"
+      ]
+    },
+    "semanticDiagnosticsPerFile": [
+      "asset:///lib.deno.fetch.d.ts",
+      "asset:///lib.deno.ns.d.ts",
+      "asset:///lib.deno.shared_globals.d.ts",
+      "asset:///lib.deno.web.d.ts",
+      "asset:///lib.deno.window.d.ts",
+      "asset:///lib.es2015.collection.d.ts",
+      "asset:///lib.es2015.core.d.ts",
+      "asset:///lib.es2015.d.ts",
+      "asset:///lib.es2015.generator.d.ts",
+      "asset:///lib.es2015.iterable.d.ts",
+      "asset:///lib.es2015.promise.d.ts",
+      "asset:///lib.es2015.proxy.d.ts",
+      "asset:///lib.es2015.reflect.d.ts",
+      "asset:///lib.es2015.symbol.d.ts",
+      "asset:///lib.es2015.symbol.wellknown.d.ts",
+      "asset:///lib.es2016.array.include.d.ts",
+      "asset:///lib.es2016.d.ts",
+      "asset:///lib.es2017.d.ts",
+      "asset:///lib.es2017.intl.d.ts",
+      "asset:///lib.es2017.object.d.ts",
+      "asset:///lib.es2017.sharedmemory.d.ts",
+      "asset:///lib.es2017.string.d.ts",
+      "asset:///lib.es2017.typedarrays.d.ts",
+      "asset:///lib.es2018.asyncgenerator.d.ts",
+      "asset:///lib.es2018.asynciterable.d.ts",
+      "asset:///lib.es2018.d.ts",
+      "asset:///lib.es2018.intl.d.ts",
+      "asset:///lib.es2018.promise.d.ts",
+      "asset:///lib.es2018.regexp.d.ts",
+      "asset:///lib.es2019.array.d.ts",
+      "asset:///lib.es2019.d.ts",
+      "asset:///lib.es2019.object.d.ts",
+      "asset:///lib.es2019.string.d.ts",
+      "asset:///lib.es2019.symbol.d.ts",
+      "asset:///lib.es2020.bigint.d.ts",
+      "asset:///lib.es2020.d.ts",
+      "asset:///lib.es2020.intl.d.ts",
+      "asset:///lib.es2020.promise.d.ts",
+      "asset:///lib.es2020.string.d.ts",
+      "asset:///lib.es2020.symbol.wellknown.d.ts",
+      "asset:///lib.es5.d.ts",
+      "asset:///lib.esnext.d.ts",
+      "asset:///lib.esnext.intl.d.ts",
+      "asset:///lib.esnext.promise.d.ts",
+      "asset:///lib.esnext.string.d.ts",
+      "file:///Users/gaylonalfano/Code/deno-vue-postgres-starter/backend/src/deps.ts",
+      "https://deno.land/std@0.69.0/_util/assert.ts",
+      "https://deno.land/std@0.69.0/_util/has_own_property.ts",
+      "https://deno.land/std@0.69.0/async/deferred.ts",
+      "https://deno.land/std@0.69.0/async/delay.ts",
+      "https://deno.land/std@0.69.0/async/mod.ts",
+      "https://deno.land/std@0.69.0/async/mux_async_iterator.ts",
+      "https://deno.land/std@0.69.0/async/pool.ts",
+      "https://deno.land/std@0.69.0/bytes/mod.ts",
+      "https://deno.land/std@0.69.0/encoding/utf8.ts",
+      "https://deno.land/std@0.69.0/fmt/colors.ts",
+      "https://deno.land/std@0.69.0/hash/sha1.ts",
+      "https://deno.land/std@0.69.0/hash/sha256.ts",
+      "https://deno.land/std@0.69.0/http/_io.ts",
+      "https://deno.land/std@0.69.0/http/http_status.ts",
+      "https://deno.land/std@0.69.0/http/server.ts",
+      "https://deno.land/std@0.69.0/io/bufio.ts",
+      "https://deno.land/std@0.69.0/io/ioutil.ts",
+      "https://deno.land/std@0.69.0/path/_constants.ts",
+      "https://deno.land/std@0.69.0/path/_interface.ts",
+      "https://deno.land/std@0.69.0/path/_util.ts",
+      "https://deno.land/std@0.69.0/path/common.ts",
+      "https://deno.land/std@0.69.0/path/glob.ts",
+      "https://deno.land/std@0.69.0/path/mod.ts",
+      "https://deno.land/std@0.69.0/path/posix.ts",
+      "https://deno.land/std@0.69.0/path/separator.ts",
+      "https://deno.land/std@0.69.0/path/win32.ts",
+      "https://deno.land/std@0.69.0/testing/asserts.ts",
+      "https://deno.land/std@0.69.0/testing/diff.ts",
+      "https://deno.land/std@0.69.0/textproto/mod.ts",
+      "https://deno.land/std@0.69.0/ws/mod.ts",
+      "https://deno.land/std@0.70.0/_util/assert.ts",
+      "https://deno.land/std@0.70.0/bytes/mod.ts",
+      "https://deno.land/std@0.70.0/fmt/colors.ts",
+      "https://deno.land/std@0.70.0/fs/exists.ts",
+      "https://deno.land/std@0.70.0/hash/sha1.ts",
+      "https://deno.land/std@0.70.0/io/bufio.ts",
+      "https://deno.land/std@0.70.0/log/handlers.ts",
+      "https://deno.land/std@0.70.0/log/levels.ts",
+      "https://deno.land/std@0.70.0/log/logger.ts",
+      "https://deno.land/std@0.70.0/log/mod.ts",
+      "https://deno.land/std@0.70.0/uuid/_common.ts",
+      "https://deno.land/std@0.70.0/uuid/mod.ts",
+      "https://deno.land/std@0.70.0/uuid/v1.ts",
+      "https://deno.land/std@0.70.0/uuid/v4.ts",
+      "https://deno.land/std@0.70.0/uuid/v5.ts",
+      "https://deno.land/x/media_types@v2.4.7/db.ts",
+      "https://deno.land/x/media_types@v2.4.7/deps.ts",
+      "https://deno.land/x/media_types@v2.4.7/mod.ts",
+      "https://deno.land/x/oak@v6.2.0/application.ts",
+      "https://deno.land/x/oak@v6.2.0/body.ts",
+      "https://deno.land/x/oak@v6.2.0/buf_reader.ts",
+      "https://deno.land/x/oak@v6.2.0/content_disposition.ts",
+      "https://deno.land/x/oak@v6.2.0/context.ts",
+      "https://deno.land/x/oak@v6.2.0/cookies.ts",
+      "https://deno.land/x/oak@v6.2.0/deps.ts",
+      "https://deno.land/x/oak@v6.2.0/headers.ts",
+      "https://deno.land/x/oak@v6.2.0/helpers.ts",
+      "https://deno.land/x/oak@v6.2.0/httpError.ts",
+      "https://deno.land/x/oak@v6.2.0/isMediaType.ts",
+      "https://deno.land/x/oak@v6.2.0/keyStack.ts",
+      "https://deno.land/x/oak@v6.2.0/mediaTyper.ts",
+      "https://deno.land/x/oak@v6.2.0/middleware.ts",
+      "https://deno.land/x/oak@v6.2.0/mod.ts",
+      "https://deno.land/x/oak@v6.2.0/multipart.ts",
+      "https://deno.land/x/oak@v6.2.0/negotiation/charset.ts",
+      "https://deno.land/x/oak@v6.2.0/negotiation/common.ts",
+      "https://deno.land/x/oak@v6.2.0/negotiation/encoding.ts",
+      "https://deno.land/x/oak@v6.2.0/negotiation/language.ts",
+      "https://deno.land/x/oak@v6.2.0/negotiation/mediaType.ts",
+      "https://deno.land/x/oak@v6.2.0/request.ts",
+      "https://deno.land/x/oak@v6.2.0/response.ts",
+      "https://deno.land/x/oak@v6.2.0/router.ts",
+      "https://deno.land/x/oak@v6.2.0/send.ts",
+      "https://deno.land/x/oak@v6.2.0/server_sent_event.ts",
+      "https://deno.land/x/oak@v6.2.0/tssCompare.ts",
+      "https://deno.land/x/oak@v6.2.0/types.d.ts",
+      "https://deno.land/x/oak@v6.2.0/util.ts",
+      "https://raw.githubusercontent.com/pillarjs/path-to-regexp/v6.1.0/src/index.ts"
+    ]
+  },
+  "version": "4.0.2"
+}

@@ -1,0 +1,27 @@
+{
+  "headers": {
+    "x-github-request-id": "7D02:3A9D:3646E:44E62:5F700393",
+    "date": "Sun, 27 Sep 2020 03:14:27 GMT",
+    "x-content-type-options": "nosniff",
+    "strict-transport-security": "max-age=31536000",
+    "x-served-by": "cache-dfw18673-DFW",
+    "expires": "Sun, 27 Sep 2020 03:19:27 GMT",
+    "x-frame-options": "deny",
+    "x-xss-protection": "1; mode=block",
+    "vary": "Authorization,Accept-Encoding",
+    "x-timer": "S1601176467.447448,VS0,VE115",
+    "access-control-allow-origin": "*",
+    "connection": "keep-alive",
+    "source-age": "0",
+    "x-cache": "MISS, MISS",
+    "x-fastly-request-id": "62b70e8ffa095d5a52b1ca3f0aa2f7244e62cf11",
+    "via": "1.1 varnish (Varnish/6.0),1.1 varnish",
+    "cache-control": "max-age=300",
+    "content-type": "text/plain; charset=utf-8",
+    "x-cache-hits": "0, 0",
+    "etag": "W/\"5052bd14647ea586fc30eaa1f8f45deb0485e331eeec90ba1e77727d142b3745\"",
+    "content-security-policy": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
+    "accept-ranges": "bytes"
+  },
+  "url": "https://raw.githubusercontent.com/pillarjs/path-to-regexp/v6.1.0/src/index.ts"
+}
