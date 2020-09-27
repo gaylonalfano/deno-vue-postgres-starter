@@ -1,25 +1,25 @@
 {
   "headers": {
-    "cache-control": "public, max-age=31536000, immutable",
-    "age": "106619",
-    "x-amz-version-id": "59d69N2xSiZSyzQfADlUgRGa8IVHyni3",
-    "date": "Sun, 27 Sep 2020 03:14:26 GMT",
     "content-type": "application/typescript; charset=utf-8",
-    "x-amz-id-2": "yAdWyc/WN9zgK6CtBLx2VF/Y3zGQZhxXP0vAmaQ/XyepqjwSAqk32pQya4yYR4aAxCAtIe9zvFU=",
-    "content-length": "7212",
     "accept-ranges": "bytes",
-    "x-amz-request-id": "B77C327D06BA29EE",
-    "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-    "cf-ray": "5d920df43d78b9b6-ATL",
+    "cf-request-id": "056f330b3f0000e5bf2611d200000001",
+    "x-amz-id-2": "yAdWyc/WN9zgK6CtBLx2VF/Y3zGQZhxXP0vAmaQ/XyepqjwSAqk32pQya4yYR4aAxCAtIe9zvFU=",
+    "x-amz-version-id": "59d69N2xSiZSyzQfADlUgRGa8IVHyni3",
     "access-control-allow-origin": "*",
-    "etag": "\"296cf27dd28a0eceaa1de08a12ca7e45\"",
-    "set-cookie": "__cfduid=d347affb6a097bc9174c961a3f98dc8d51601176466; expires=Tue, 27-Oct-20 03:14:26 GMT; path=/; domain=.deno.land; HttpOnly; SameSite=Lax; Secure",
+    "cf-ray": "5d9221253946e5bf-ATL",
     "vary": "Accept-Encoding",
+    "date": "Sun, 27 Sep 2020 03:27:32 GMT",
+    "age": "107405",
+    "etag": "\"296cf27dd28a0eceaa1de08a12ca7e45\"",
+    "cache-control": "public, max-age=31536000, immutable",
     "last-modified": "Fri, 18 Sep 2020 20:02:07 GMT",
+    "x-amz-request-id": "B77C327D06BA29EE",
     "server": "cloudflare",
-    "cf-request-id": "056f270ca50000b9b615bbe200000001",
     "cf-cache-status": "HIT",
-    "alt-svc": "h3-27=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+    "content-length": "7212",
+    "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+    "alt-svc": "h3-27=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+    "set-cookie": "__cfduid=d253ff1c511fb5bb84e1e868837990e681601177252; expires=Tue, 27-Oct-20 03:27:32 GMT; path=/; domain=.deno.land; HttpOnly; SameSite=Lax; Secure"
   },
   "url": "https://deno.land/std@0.70.0/fmt/colors.ts"
 }
