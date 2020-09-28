@@ -3,22 +3,25 @@
 version: '3.1'
 
 services:
-#   backend:
-#     build: ./backend
-#     command: uvicorn app.main:app --reload --workers 1 --host 0.0.0.0 --port 8000
-#     volumes:
-#       - ./backend/:/app/
-#     ports:
-#       - 8000:8000
-#     environment:
-#       # DATABASE_URL=postgresql://user:password@postgresserver/db
-      # - DATABASE_URL=postgresql://${DB_USER}:${DB_PASSWORD}@db/${DB_DATABASE}
+  api:
+    container_name: deno_api
+    build: .
+    command: run --allow-env --allow-net --allow-read src/app/server.ts
+    volumes:
+      - ./:/app/
+    ports:
+      - 8000:8000
+    environment:
+      # DATABASE_URL=postgresql://user:password@postgresserver/db
+      # TODO I believe the postgresserver is 'db'due to the service name? Not sure...
+      - DATABASE_URL=postgresql://${DB_USER}:${DB_PASSWORD}@db/${DB_DATABASE}
   db:
     container_name: deno_postgres
     image: postgres
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     ports:
+      # -p <host_port>:<container_port> configuration
       - 5432:5432
     environment:
       - POSTGRES_USER=${DB_USER}

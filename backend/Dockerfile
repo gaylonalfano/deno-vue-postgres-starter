@@ -21,5 +21,5 @@ USER deno
 # it set ENTRYPOINT ["deno"]. So we're passing any CMD to our ENTRYPOINT
 CMD ["run", "--allow-net", "--allow-read", "--lock=lock.json", "src/app/server.ts"]
 
-# Export port 8000 so our NASA API is accessible outside of our container
+# Export port 8000 so our API is accessible outside of our container
 EXPOSE 8000 
