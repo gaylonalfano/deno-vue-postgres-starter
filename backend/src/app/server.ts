@@ -46,7 +46,6 @@ app.use(async (ctx, next) => {
     /* me: models.users.get("1"), */
     me: services.user.getUserById(+"1"),
   };
-
   await next();
 });
 
