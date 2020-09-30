@@ -6,6 +6,17 @@ import { runQuery } from "../db/db.ts";
 import IUser from "../types/user.type.ts";
 import ICreateUser from "../types/create-user.type.ts";
 
+// TODO What's the type to return? QueryResult.rows?
+const getUsers = async () => {
+  const result = await runQuery({
+    text: `
+      SELECT *
+      FROM users;
+    `,
+  });
+  return result.rows;
+};
+
 // TODO Get my IUser in here and start connecting to db to create a users table.
 const getUserById = async (id: number): Promise<IUser | null> => {
   const result = await runQuery({
@@ -37,4 +48,4 @@ const createUser = async (user: ICreateUser): Promise<IUser | null> => {
   return await getUserById(result.rowCount!);
 };
 
-export { getUserById, createUser };
+export default { getUsers, getUserById, createUser };

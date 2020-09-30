@@ -3,6 +3,7 @@ import { Application, log } from "../../deps.ts";
 import models from "./models/models.module.ts";
 import routes from "./routes/routes.module.ts";
 import middlewares from "./middlewares/middlewares.module.ts";
+import services from "./services/services.module.ts";
 
 const port = 8000;
 const app = new Application();
@@ -36,11 +37,14 @@ app.use(middlewares.loggerMiddleware);
 app.use(middlewares.timingMiddleware);
 
 // Add our pseudo auth middleware
+// TODO Can I add repositories or services to state property?
 app.use(async (ctx, next) => {
   ctx.state = {
     models: models,
+    services: services,
     // pseudo authenticated user
-    me: models.users.get("1"),
+    /* me: models.users.get("1"), */
+    me: services.user.getUserById(+"1"),
   };
 
   await next();

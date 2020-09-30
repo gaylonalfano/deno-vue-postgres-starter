@@ -9,6 +9,7 @@ export {
   Context,
   RouterContext,
   helpers,
+  httpErrors,
 } from "https://deno.land/x/oak@v6.2.0/mod.ts";
 export { config as envConfig } from "https://deno.land/x/dotenv@v0.5.0/mod.ts";
 // postgres: https://deno-postgres.com/#/
