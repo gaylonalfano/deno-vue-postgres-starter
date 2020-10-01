@@ -38,13 +38,14 @@ app.use(middlewares.timingMiddleware);
 
 // Add our pseudo auth middleware
 // TODO Can I add repositories or services to state property?
+// IMPORTANT Adding services results in ConnectionRefused error for API service
 app.use(async (ctx, next) => {
   ctx.state = {
     models: models,
-    services: services,
+    /* services: services, */
     // pseudo authenticated user
-    /* me: models.users.get("1"), */
-    me: services.user.getUserById(+"1"),
+    me: models.users.get("1"),
+    /* me: services.user.getUserById(1), */
   };
   await next();
 });

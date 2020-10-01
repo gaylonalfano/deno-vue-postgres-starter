@@ -6,7 +6,8 @@ services:
   api:
     container_name: deno_api
     build: .
-    command: run --allow-env --allow-net --allow-read src/app/server.ts
+    # // TODO Need --allow-env flag?
+    command: run --allow-net --allow-read src/app/server.ts
     volumes:
       - ./:/app/
     ports:
@@ -16,8 +17,8 @@ services:
       # TODO I believe the postgresserver is 'db'due to the service name? Not sure...
       - DATABASE_URL=postgresql://${DB_USER}:${DB_PASSWORD}@db/${DB_DATABASE}
     # # TODO Do I need to add depends_on?
-    depends_on:
-      - db
+    # depends_on:
+    #   - db
 
 
   db:
