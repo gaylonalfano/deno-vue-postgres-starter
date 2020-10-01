@@ -1,4 +1,10 @@
-import { Pool, PoolClient, QueryConfig, QueryResult } from "../../../deps.ts";
+import {
+  Pool,
+  PoolClient,
+  QueryConfig,
+  QueryResult,
+  PostgresClient,
+} from "../../../deps.ts";
 import config from "../config/config.ts";
 
 // https://deno-postgres.com/#/?id=connection-management
@@ -15,16 +21,25 @@ const dbPool = new Pool(
   POOL_CONNECTIONS
 );
 
+// Adding dbClient const for testing since pools are erroring
+const db = new PostgresClient({
+  user: config.DB_USER,
+  password: config.DB_PASSWORD,
+  database: config.DB_DATABASE,
+  hostname: config.DB_HOST,
+  port: +config.DB_PORT,
+});
+
 // https://deno-postgres.com/#/?id=example
 async function runQuery(query: QueryConfig) {
   const client: PoolClient = await dbPool.connect();
-  const result: QueryResult = await client.query(query);
+  const dbResult: QueryResult = await client.query(query);
   client.release();
-  return result;
+  return dbResult;
 }
 
 /* const db = await dbClient.connect(); */
 /* export default { dbClient }; */
 // TODO Not sure if this is how I should modularize this
 // but this function contains all the reusable parts I believe.
-export { runQuery };
+export { runQuery, db };

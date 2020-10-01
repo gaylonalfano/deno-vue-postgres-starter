@@ -23,7 +23,7 @@ const getUserById = async (id: number): Promise<IUser | null> => {
     text: `
       SELECT *
       FROM users
-      WHERE id = ? LIMIT 0, 1
+      WHERE id = $1 LIMIT 0, 1
       `,
     args: [id],
   });
