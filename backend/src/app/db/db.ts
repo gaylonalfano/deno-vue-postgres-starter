@@ -21,7 +21,7 @@ const dbPool = new Pool(
   POOL_CONNECTIONS
 );
 
-// Adding dbClient const for testing since pools are erroring
+// Adding db client const for testing since pools are erroring
 const db = new PostgresClient({
   user: config.DB_USER,
   password: config.DB_PASSWORD,
