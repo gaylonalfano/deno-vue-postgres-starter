@@ -30,8 +30,8 @@ const getUsers = async (ctx: RouterContext) => {
     user: config.DB_USER,
     password: config.DB_PASSWORD,
     database: config.DB_DATABASE,
-    /* hostname: config.DB_HOST, */
-    hostname: "178.28.0.2",
+    hostname: config.DB_HOST,
+    /* hostname: "178.28.0.2", */
     port: +config.DB_PORT,
   });
 

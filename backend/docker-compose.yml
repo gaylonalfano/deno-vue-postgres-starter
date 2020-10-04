@@ -12,14 +12,14 @@ services:
       - ./:/app/
     ports:
       - 8000:8000
-    environment:
+    # environment:
     # #   # DATABASE_URL=postgresql://user:password@postgresserver/db
     # #   # TODO I believe the postgresserver is 'db'due to the service name? Not sure...
-      - DATABASE_URL=postgresql://${DB_USER}:${DB_PASSWORD}@postgres/${DB_DATABASE}
+      # - DATABASE_URL=postgresql://${DB_USER}:${DB_PASSWORD}@postgres/${DB_DATABASE}
       # - DATABASE_URL=postgresql://${DB_USER}:${DB_PASSWORD}@:${DB_PORT}/${DB_DATABASE}
     # # TODO Do I need to add depends_on?
-    # depends_on:
-    #   - db
+    depends_on:
+      - db
 
 
   db:
