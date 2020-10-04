@@ -1,5 +1,8 @@
 # https://hub.docker.com/r/hayd/deno/tags
-FROM hayd/deno:alpine-1.4.1
+FROM hayd/deno:alpine-1.4.3
+
+# Export port 8000 so our API is accessible outside of our container
+EXPOSE 8000 
 
 # Now need a container for our application
 # This is just like 'cd' command
@@ -19,7 +22,5 @@ USER deno
 # Execute our Deno program by passing set of commands
 # CMD replaces 'deno' command essentially because in the base image
 # it set ENTRYPOINT ["deno"]. So we're passing any CMD to our ENTRYPOINT
-CMD ["run", "--allow-net", "--allow-read", "--lock=lock.json", "src/app/server.ts"]
-
-# Export port 8000 so our API is accessible outside of our container
-EXPOSE 8000 
+# CMD ["run", "--allow-net", "--allow-read", "--lock=lock.json", "src/app/server.ts"]
+CMD ["run", "--allow-net", "--allow-read", "--lock=lock.json", "src/app/app_test.ts"]

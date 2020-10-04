@@ -1,7 +1,11 @@
+/* import { Client } from "https://deno.land/x/postgres/mod.ts"; */
+/* import config from "./config/config.ts"; */
+import dbClient from "./postgres.ts";
+
 import {
   Application,
   log,
-  PostgresClient,
+  /* PostgresClient, */
   Router,
   Context,
 } from "../../deps.ts";
@@ -38,9 +42,9 @@ app.addEventListener("error", (event) => {
   log.error(event.error);
 });
 
-app.use(middlewares.errorMiddleware);
-app.use(middlewares.loggerMiddleware);
-app.use(middlewares.timingMiddleware);
+/* app.use(middlewares.errorMiddleware); */
+/* app.use(middlewares.loggerMiddleware); */
+/* app.use(middlewares.timingMiddleware); */
 
 // Add our pseudo auth middleware
 // TODO Can I add repositories or services to state property?
@@ -59,44 +63,23 @@ app.use(middlewares.timingMiddleware);
 // TODO Adding DB client and basic /users handler here for
 // testing purposes only. Can't connect to db via API so far...
 const router = new Router();
+
 router
   .get("/", (ctx: Context) => {
     ctx.response.body = "Home";
   })
-  .get("/users"),
-  async (ctx: Context) => {
-    const client = new PostgresClient({
-      user: "postgres",
-      password: "postgres",
-      database: "deno_postgres_db",
-      hostname: "localhost",
-      port: 5432,
-    });
-    console.log(client);
-    await client.connect();
-    const result = await client.query("SELECT * FROM users;");
-    ctx.response.body = result.rows;
-    console.log(result.rows);
-    await client.end();
-  };
+  .get("/users", async (ctx: Context) => {
+    try {
+      const result = await dbClient.query("SELECT * FROM users LIMIT 1;");
+      ctx.response.body = result.rows;
+    } catch (error) {
+      console.log(error);
+      ctx.throw(error);
+    }
+  });
 
 app.use(router.routes());
 app.use(router.allowedMethods());
-/* async function main() { */
-/*   const client = new PostgresClient({ */
-/*     user: "postgres", */
-/*     password: "postgres", */
-/*     database: "deno_postgres_db", */
-/*     hostname: "localhost", */
-/*     port: 5432, */
-/*   }); */
-/*   await client.connect(); */
-/*   const result = await client.query("SELECT * FROM users;"); */
-/*   console.log(result.rows); */
-/*   await client.end(); */
-/* } */
-
-/* main(); */
 
 // Add router middleware
 /* app.use(routes.session.allowedMethods()); */
