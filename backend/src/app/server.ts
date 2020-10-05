@@ -1,19 +1,8 @@
-/* import { Client } from "https://deno.land/x/postgres/mod.ts"; */
-/* import config from "./config/config.ts"; */
-import dbClient from "./postgres.ts";
-
-import {
-  Application,
-  log,
-  /* PostgresClient, */
-  Router,
-  Context,
-} from "../../deps.ts";
+import { Application, log } from "../../deps.ts";
 
 import models from "./models/models.module.ts";
 import routes from "./routes/routes.module.ts";
 import middlewares from "./middlewares/middlewares.module.ts";
-import services from "./services/services.module.ts";
 
 const port = 8000;
 const app = new Application();
@@ -42,52 +31,30 @@ app.addEventListener("error", (event) => {
   log.error(event.error);
 });
 
-/* app.use(middlewares.errorMiddleware); */
-/* app.use(middlewares.loggerMiddleware); */
-/* app.use(middlewares.timingMiddleware); */
+app.use(middlewares.errorMiddleware);
+app.use(middlewares.loggerMiddleware);
+app.use(middlewares.timingMiddleware);
 
 // Add our pseudo auth middleware
 // TODO Can I add repositories or services to state property?
-// IMPORTANT Adding services results in ConnectionRefused error for API service
-/* app.use(async (ctx, next) => { */
-/*   ctx.state = { */
-/*     models: models, */
-/*     /1* services: services, *1/ */
-/*     // pseudo authenticated user */
-/*     me: models.users.get("1"), */
-/*     /1* me: services.user.getUserById(1), *1/ */
-/*   }; */
-/*   await next(); */
-/* }); */
-
-// TODO Adding DB client and basic /users handler here for
-// testing purposes only. Can't connect to db via API so far...
-const router = new Router();
-
-router
-  .get("/", (ctx: Context) => {
-    ctx.response.body = "Home";
-  })
-  .get("/users", async (ctx: Context) => {
-    try {
-      const result = await dbClient.query("SELECT * FROM users LIMIT 1;");
-      ctx.response.body = result.rows;
-    } catch (error) {
-      console.log(error);
-      ctx.throw(error);
-    }
-  });
-
-app.use(router.routes());
-app.use(router.allowedMethods());
+app.use(async (ctx, next) => {
+  ctx.state = {
+    models: models,
+    /* services: services, */
+    // pseudo authenticated user
+    me: models.users.get("1"),
+    /* me: services.user.getUserById(1), */
+  };
+  await next();
+});
 
 // Add router middleware
-/* app.use(routes.session.allowedMethods()); */
-/* app.use(routes.session.routes()); */
-/* app.use(routes.user.allowedMethods()); */
-/* app.use(routes.user.routes()); */
-/* app.use(routes.message.allowedMethods()); */
-/* app.use(routes.message.routes()); */
+app.use(routes.session.allowedMethods());
+app.use(routes.session.routes());
+app.use(routes.user.allowedMethods());
+app.use(routes.user.routes());
+app.use(routes.message.allowedMethods());
+app.use(routes.message.routes());
 
 // Let's specify what to execute if ran as standalone module: "main": true
 if (import.meta.main) {
