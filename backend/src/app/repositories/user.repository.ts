@@ -21,12 +21,13 @@ const getUsers = async () => {
 const getUserById = async (id: number): Promise<IUser | null> => {
   const result = await runQuery({
     text: `
-      SELECT *
-      FROM users
-      WHERE id = $1 LIMIT 0, 1
-      `,
+      SELECT * 
+      FROM users 
+      WHERE id = $1;
+    `,
     args: [id],
   });
+  console.log(result.rows[0]);
   return result.rows.length ? result.rows[0] : null;
 };
 

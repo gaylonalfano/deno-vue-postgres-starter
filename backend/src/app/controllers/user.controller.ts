@@ -11,8 +11,9 @@ const getUsers = async (ctx: RouterContext) => {
 };
 
 const getUserById = async (ctx: RouterContext) => {
-  const { userId } = helpers.getQuery(ctx, { mergeParams: true });
-  ctx.response.body = ctx.state.services.user.getUserById(userId);
+  const { id } = helpers.getQuery(ctx, { mergeParams: true });
+  const user = await services.user.getUserById(+id);
+  ctx.response.body = user;
 };
 
 export default {
