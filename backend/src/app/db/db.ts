@@ -21,6 +21,14 @@ const dbPool = new Pool(
   POOL_CONNECTIONS
 );
 
+// https://deno-postgres.com/#/?id=example
+export async function runQuery(query: QueryConfig) {
+  const client: PoolClient = await dbPool.connect();
+  const dbResult: QueryResult = await client.query(query);
+  client.release();
+  return dbResult;
+}
+
 // Adding db client const for testing since pools are erroring
 const db = new PostgresClient({
   user: config.DB_USER,
@@ -30,16 +38,10 @@ const db = new PostgresClient({
   port: +config.DB_PORT,
 });
 
-// https://deno-postgres.com/#/?id=example
-async function runQuery(query: QueryConfig) {
-  const client: PoolClient = await dbPool.connect();
-  const dbResult: QueryResult = await client.query(query);
-  client.release();
-  return dbResult;
-}
+await db.connect();
 
 /* const db = await dbClient.connect(); */
 /* export default { dbClient }; */
 // TODO Not sure if this is how I should modularize this
 // but this function contains all the reusable parts I believe.
-export { runQuery, db };
+export default db;

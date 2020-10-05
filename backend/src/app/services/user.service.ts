@@ -1,7 +1,12 @@
 // https://github.com/asad-mlbd/deno-api-starter-oak/blob/master/services/user.service.ts
-/* import userRepo from "../repositories/user.repository.ts"; */
 import repositories from "../repositories/repositories.module.ts";
 import { httpErrors } from "../../../deps.ts";
+
+const getUsers = async () => {
+  const users = await repositories.user.getUsers();
+  // Do more data/business logic transformations here if needed
+  return users;
+};
 
 const getUserById = async (id: number) => {
   const user = await repositories.user.getUserById(id);
@@ -10,11 +15,6 @@ const getUserById = async (id: number) => {
   }
 
   return user;
-};
-
-const getUsers = async () => {
-  const users = await repositories.user.getUsers();
-  return users;
 };
 
 export default {

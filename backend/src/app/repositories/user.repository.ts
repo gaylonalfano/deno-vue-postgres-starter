@@ -15,7 +15,7 @@ const getUsers = async () => {
       FROM users;
     `,
   });
-  return result.rows;
+  return result.rowsOfObjects();
 };
 
 const getUserById = async (id: number): Promise<IUser | null> => {
@@ -28,12 +28,6 @@ const getUserById = async (id: number): Promise<IUser | null> => {
     args: [id],
   });
   return result.rows.length ? result.rows[0] : null;
-
-  /* if (result.rowCount > 0) { */
-  /*   return result.rows[0]; */
-  /* } else { */
-  /*   return null; */
-  /* } */
 };
 
 const createUser = async (user: ICreateUser): Promise<IUser | null> => {

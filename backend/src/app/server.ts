@@ -40,10 +40,8 @@ app.use(middlewares.timingMiddleware);
 app.use(async (ctx, next) => {
   ctx.state = {
     models: models,
-    /* services: services, */
     // pseudo authenticated user
     me: models.users.get("1"),
-    /* me: services.user.getUserById(1), */
   };
   await next();
 });

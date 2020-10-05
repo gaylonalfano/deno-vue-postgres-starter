@@ -1,12 +1,12 @@
 # Following (among others): https://github.com/asad-mlbd/deno-api-starter-oak/blob/ab2ce18accd5a3a0675d40793bd0489240c440ad/docker-compose.yml
 # TODO Find out how to connect to my PG DB inside Docker from config
-version: '3.1'
+version: '3.8'
 
 services:
   api:
     build: .
     # // TODO Need --allow-env flag?
-    command: run --allow-net --allow-read src/app/server.ts
+    # command: run --allow-net --allow-read src/app/server.ts
     volumes:
       - ./:/app/
     ports:
@@ -15,7 +15,7 @@ services:
     # #   # DATABASE_URL=postgresql://user:password@postgresserver/db
     # #   # TODO I believe the postgresserver is 'db'due to the service name? Not sure...
     #   # - DATABASE_URL=postgresql://${DB_USER}:${DB_PASSWORD}@postgres/${DB_DATABASE}
-    #   - DATABASE_URL=postgresql://${DB_USER}:${DB_PASSWORD}@db:${DB_PORT}/${DB_DATABASE}
+      # - DATABASE_URL=postgresql://${DB_USER}:${DB_PASSWORD}@db:${DB_PORT}/${DB_DATABASE}
     # TODO Do I need to add depends_on?
     depends_on:
       - db
