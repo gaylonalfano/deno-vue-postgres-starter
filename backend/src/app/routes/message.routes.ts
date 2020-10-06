@@ -1,70 +1,77 @@
-import { Router, RouterContext, helpers, v4 } from "../../../deps.ts";
+import { Router } from "../../../deps.ts";
+import controllers from "../controllers/controllers.module.ts";
 
 const router = new Router();
 
-// TODO Could later replace with dedicated Controllers functions
-router.get("/messages", (ctx: RouterContext) => {
-  ctx.response.body = Array.from(ctx.state.models.messages.values());
-});
+router.get("/messages", controllers.message.getMessages);
 
-router.get("/messages/:messageId", (ctx: RouterContext) => {
-  const { messageId } = helpers.getQuery(ctx, { mergeParams: true });
-  ctx.response.body = ctx.state.models.messages.get(messageId);
-});
+/* .get("/messages/:id", controllers.message.getMessageById); */
+/* .post("/messages", controllers.message.createMessage); */
+/* .put("/messages/:id", controllers.message.updateMessage); */
+/* .delete("/messages/:id", controllers.message.deleteMessage); */
 
-router.post("/messages", async (ctx: RouterContext) => {
-  // Generating an id since we're not connected to a DB yet
-  const id = v4.generate();
+/* router.get("/messages", (ctx: RouterContext) => { */
+/*   ctx.response.body = Array.from(ctx.state.models.messages.values()); */
+/* }); */
 
-  // NOTE: .body() isn't async. value is now a promise
-  const { value } = ctx.request.body({ type: "json" });
-  const { text } = await value;
+/* router.get("/messages/:messageId", (ctx: RouterContext) => { */
+/*   const { messageId } = helpers.getQuery(ctx, { mergeParams: true }); */
+/*   ctx.response.body = ctx.state.models.messages.get(messageId); */
+/* }); */
 
-  // Add to Map (our database)
-  ctx.state.models.messages.set(id, {
-    id,
-    text,
-    userId: ctx.state.me.id,
-  });
+/* router.post("/messages", async (ctx: RouterContext) => { */
+/*   // Generating an id since we're not connected to a DB yet */
+/*   const id = v4.generate(); */
 
-  ctx.response.body = ctx.state.models.messages.get(id);
-});
+/*   // NOTE: .body() isn't async. value is now a promise */
+/*   const { value } = ctx.request.body({ type: "json" }); */
+/*   const { text } = await value; */
 
-// TODO Implement update operation. Permissions is a key component.
-// Should only allow authenticated user (me) who is creator of the message
-// Example: https://github.com/asad-mlbd/deno-api-starter-oak/blob/ab2ce18accd5a3a0675d40793bd0489240c440ad/routes/user.routes.ts
-router.put("/messages/:messageId", async (ctx: RouterContext) => {
-  // Get message id from params
-  const { messageId } = helpers.getQuery(ctx, { mergeParams: true });
-  const message = ctx.state.models.messages.get(messageId);
+/*   // Add to Map (our database) */
+/*   ctx.state.models.messages.set(id, { */
+/*     id, */
+/*     text, */
+/*     userId: ctx.state.me.id, */
+/*   }); */
 
-  // Check if current userId is the same as the message.userId
-  const currentUserId = ctx.state.me.id;
+/*   ctx.response.body = ctx.state.models.messages.get(id); */
+/* }); */
 
-  if (currentUserId !== message.userId) {
-    ctx.throw(401, `Current user: ${currentUserId} unauthorized to edit!`);
-  } else {
-    // Get the request data
-    const { value } = ctx.request.body({ type: "json" });
-    const { text } = await value;
+/* // TODO Implement update operation. Permissions is a key component. */
+/* // Should only allow authenticated user (me) who is creator of the message */
+/* // Example: https://github.com/asad-mlbd/deno-api-starter-oak/blob/ab2ce18accd5a3a0675d40793bd0489240c440ad/routes/user.routes.ts */
+/* router.put("/messages/:messageId", async (ctx: RouterContext) => { */
+/*   // Get message id from params */
+/*   const { messageId } = helpers.getQuery(ctx, { mergeParams: true }); */
+/*   const message = ctx.state.models.messages.get(messageId); */
 
-    // Update our Map object (database entity)
-    ctx.state.models.messages.set(messageId, {
-      id: messageId,
-      text: text,
-      userId: currentUserId,
-    });
-  }
+/*   // Check if current userId is the same as the message.userId */
+/*   const currentUserId = ctx.state.me.id; */
 
-  // TODO What should I return? I think just a boolean...
-  ctx.response.body = true;
-});
+/*   if (currentUserId !== message.userId) { */
+/*     ctx.throw(401, `Current user: ${currentUserId} unauthorized to edit!`); */
+/*   } else { */
+/*     // Get the request data */
+/*     const { value } = ctx.request.body({ type: "json" }); */
+/*     const { text } = await value; */
 
-router.delete("/messages/:messageId", async (ctx: RouterContext) => {
-  const { messageId } = helpers.getQuery(ctx, { mergeParams: true });
-  const isDeleted = ctx.state.models.messages.delete(messageId);
+/*     // Update our Map object (database entity) */
+/*     ctx.state.models.messages.set(messageId, { */
+/*       id: messageId, */
+/*       text: text, */
+/*       userId: currentUserId, */
+/*     }); */
+/*   } */
 
-  ctx.response.body = isDeleted;
-});
+/*   // TODO What should I return? I think just a boolean... */
+/*   ctx.response.body = true; */
+/* }); */
+
+/* router.delete("/messages/:messageId", async (ctx: RouterContext) => { */
+/*   const { messageId } = helpers.getQuery(ctx, { mergeParams: true }); */
+/*   const isDeleted = ctx.state.models.messages.delete(messageId); */
+
+/*   ctx.response.body = isDeleted; */
+/* }); */
 
 export default router;
