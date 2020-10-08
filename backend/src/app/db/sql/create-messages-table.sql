@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS messages (
+    id SERIAL PRIMARY KEY,
+    text VARCHAR(200) NOT NULL,
+    user_id INTEGER
+)
