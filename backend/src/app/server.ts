@@ -1,4 +1,4 @@
-import { Application, log } from "../../deps.ts";
+import { Application, log, Context } from "../../deps.ts";
 
 import routes from "./routes/routes.module.ts";
 import middlewares from "./middlewares/middlewares.module.ts";
@@ -52,6 +52,11 @@ app.use(routes.user.allowedMethods());
 app.use(routes.user.routes());
 app.use(routes.message.allowedMethods());
 app.use(routes.message.routes());
+
+// Root/home/generic route
+app.use((ctx: Context) => {
+  ctx.response.body = "Hello world!";
+});
 
 // Let's specify what to execute if ran as standalone module: "main": true
 if (import.meta.main) {
