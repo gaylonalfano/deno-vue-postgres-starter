@@ -1,4 +1,5 @@
 # TODOs
+- [ ] Seed db (manually) using sql scripts
 - [ ] Create seeds for DB init with Nessie
 - [ ] Add migrations/DB init with Nessie
 - [X] Update versions within deps.ts and make sure it still works

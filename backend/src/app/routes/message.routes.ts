@@ -3,7 +3,9 @@ import controllers from "../controllers/controllers.module.ts";
 
 const router = new Router();
 
-router.get("/messages", controllers.message.getMessages);
+router
+  .get("/messages", controllers.message.getMessages)
+  .get("/messages/:id", controllers.message.getMessageById);
 
 /* .get("/messages/:id", controllers.message.getMessageById); */
 /* .post("/messages", controllers.message.createMessage); */
