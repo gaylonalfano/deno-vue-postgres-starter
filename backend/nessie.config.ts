@@ -3,31 +3,26 @@
 import {
   ClientOptions,
   ClientPostgreSQL,
-} from "https://deno.land/x/nessie/mod.ts";
+} from "https://deno.land/x/nessie@v1.1.2/mod.ts";
 import type { ConnectionOptions } from "https://deno.land/x/postgres@v0.4.5/connection_params.ts";
 import config from "./src/app/config/config.ts";
 
 const clientConfig: ClientOptions = {
   migrationFolder: "./src/app/db/migrations",
   seedFolder: "./src/app/db/seeds",
-  experimental: true,
+  experimental: false,
 };
 
 const connectionConfig: ConnectionOptions = {
-  /* database: config.DB_DATABASE, */
-  /* hostname: config.DB_HOST, */
-  /* port: +config.DB_PORT, */
-  /* user: config.DB_USER, */
-  /* password: config.DB_PASSWORD, */
-  database: "deno_postgres_db",
+  database: config.DB_DATABASE,
+  // hostname: "db",  -- Docker service BREAKS with Nessie
   hostname: "localhost",
-  port: 5432,
-  user: "postgres",
-  password: "postgres",
+  port: +config.DB_PORT,
+  user: config.DB_USER,
+  password: config.DB_PASSWORD,
 };
 
 export default {
-  /* exposeQueryBuilder: true, */
   client: new ClientPostgreSQL(clientConfig, connectionConfig),
 };
 
