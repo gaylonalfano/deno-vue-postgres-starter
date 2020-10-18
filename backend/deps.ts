@@ -1,12 +1,11 @@
 // Standard Library
 export * as log from "https://deno.land/std@0.74.0/log/mod.ts";
-export { v4 } from "https://deno.land/std@0.74.0/uuid/mod.ts";
 export {
   assertArrayContains,
   assertEquals,
 } from "https://deno.land/std@0.74.0/testing/asserts.ts";
 
-// Third-party
+// Oak
 export {
   Application,
   Router,
@@ -14,9 +13,10 @@ export {
   RouterContext,
   helpers,
   httpErrors,
-} from "https://deno.land/x/oak@v6.2.0/mod.ts";
+} from "https://deno.land/x/oak@v6.3.1/mod.ts";
+// env
 export { config as envConfig } from "https://deno.land/x/dotenv@v0.5.0/mod.ts";
-// postgres: https://deno-postgres.com/#/
+// PostgreSQL
 export {
   Client as PostgresClient,
   Pool,
