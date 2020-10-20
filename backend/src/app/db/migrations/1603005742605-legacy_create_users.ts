@@ -13,7 +13,7 @@
 /*} */
 
 // LEGACY
-import { Migration } from "https://deno.land/x/nessie@v1.1.2/mod.ts";
+import { Migration } from "https://deno.land/x/nessie/mod.ts";
 
 export const up: Migration = () => {
   return "CREATE TABLE table1 (id int);";

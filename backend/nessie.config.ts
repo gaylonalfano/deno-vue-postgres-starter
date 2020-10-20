@@ -3,14 +3,14 @@
 import {
   ClientOptions,
   ClientPostgreSQL,
-} from "https://deno.land/x/nessie@v1.1.2/mod.ts";
+} from "https://deno.land/x/nessie@v1.1.1/mod.ts";
 import type { ConnectionOptions } from "https://deno.land/x/postgres@v0.4.5/connection_params.ts";
 import config from "./src/app/config/config.ts";
 
 const clientConfig: ClientOptions = {
   migrationFolder: "./src/app/db/migrations",
   seedFolder: "./src/app/db/seeds",
-  experimental: false,
+  experimental: true,
 };
 
 const connectionConfig: ConnectionOptions = {
