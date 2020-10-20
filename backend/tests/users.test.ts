@@ -1,22 +1,15 @@
 import { assertArrayContains, assertEquals } from "../deps.ts";
-import repositories from "../src/app/repositories/repositories.module.ts";
 
-Deno.test({
-  name: "hello world",
-  fn: () => {
-    const x = 1 + 2;
-    assertEquals(x, 3);
-  },
+Deno.test("get_users_request_json", async () => {
+  const res = await fetch('http://localhost:8000/users',{
+    method: "GET",
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  });
+  const data = await res.json();
+  const status = await res.status;
+  assertEquals(status, 200);
+  assertArrayContains(data, [{"id":1,"username":"Gaylon"}]);
 });
 
-Deno.test("get users", () => {
-  const users = repositories.user.getUsers();
-  assertArrayContains()
-  return users;
-});
-
-
-/* Deno.test("get users", async () => { */
-/*   const users = await repositories.user.getUsers(); */
-/*   console.log(users); */
-/* }); */
